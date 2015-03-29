@@ -13,6 +13,9 @@
 		42803AD01AC791EA00D6E206 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42803ACF1AC791EA00D6E206 /* Images.xcassets */; };
 		42803AD31AC791EA00D6E206 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42803AD11AC791EA00D6E206 /* LaunchScreen.xib */; };
 		42803ADF1AC791EA00D6E206 /* ACDSprototype2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803ADE1AC791EA00D6E206 /* ACDSprototype2Tests.m */; };
+		42803AF01AC7A7B100D6E206 /* TransportsSplitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AEF1AC7A7B100D6E206 /* TransportsSplitVC.m */; };
+		42803AF31AC7A7F700D6E206 /* TransportsMasterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AF21AC7A7F700D6E206 /* TransportsMasterTVC.m */; };
+		42803AF61AC7A82E00D6E206 /* TransportsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AF51AC7A82E00D6E206 /* TransportsDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,12 @@
 		42803AD81AC791EA00D6E206 /* ACDSprototype2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACDSprototype2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42803ADD1AC791EA00D6E206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42803ADE1AC791EA00D6E206 /* ACDSprototype2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACDSprototype2Tests.m; sourceTree = "<group>"; };
+		42803AEE1AC7A7B100D6E206 /* TransportsSplitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportsSplitVC.h; sourceTree = "<group>"; };
+		42803AEF1AC7A7B100D6E206 /* TransportsSplitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsSplitVC.m; sourceTree = "<group>"; };
+		42803AF11AC7A7F700D6E206 /* TransportsMasterTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportsMasterTVC.h; sourceTree = "<group>"; };
+		42803AF21AC7A7F700D6E206 /* TransportsMasterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsMasterTVC.m; sourceTree = "<group>"; };
+		42803AF41AC7A82E00D6E206 /* TransportsDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportsDetailVC.h; sourceTree = "<group>"; };
+		42803AF51AC7A82E00D6E206 /* TransportsDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,12 @@
 			children = (
 				42803AC61AC791EA00D6E206 /* AppDelegate.h */,
 				42803AC71AC791EA00D6E206 /* AppDelegate.m */,
+				42803AEE1AC7A7B100D6E206 /* TransportsSplitVC.h */,
+				42803AEF1AC7A7B100D6E206 /* TransportsSplitVC.m */,
+				42803AF11AC7A7F700D6E206 /* TransportsMasterTVC.h */,
+				42803AF21AC7A7F700D6E206 /* TransportsMasterTVC.m */,
+				42803AF41AC7A82E00D6E206 /* TransportsDetailVC.h */,
+				42803AF51AC7A82E00D6E206 /* TransportsDetailVC.m */,
 				42803ACC1AC791EA00D6E206 /* Main.storyboard */,
 				42803ACF1AC791EA00D6E206 /* Images.xcassets */,
 				42803AD11AC791EA00D6E206 /* LaunchScreen.xib */,
@@ -214,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42803AF61AC7A82E00D6E206 /* TransportsDetailVC.m in Sources */,
 				42803AC81AC791EA00D6E206 /* AppDelegate.m in Sources */,
+				42803AF31AC7A7F700D6E206 /* TransportsMasterTVC.m in Sources */,
 				42803AC51AC791EA00D6E206 /* main.m in Sources */,
+				42803AF01AC7A7B100D6E206 /* TransportsSplitVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +426,7 @@
 				42803AE41AC791EA00D6E206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42803AE51AC791EA00D6E206 /* Build configuration list for PBXNativeTarget "ACDSprototype2Tests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +435,7 @@
 				42803AE71AC791EA00D6E206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

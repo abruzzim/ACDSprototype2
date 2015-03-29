@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzG-kc-edX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Transports NC-->
@@ -24,7 +25,7 @@
         <!--Transports Detail VC-->
         <scene sceneID="Ytx-1E-X8Q">
             <objects>
-                <viewController title="Transports Detail VC" id="nkN-mZ-NrD" sceneMemberID="viewController">
+                <viewController title="Transports Detail VC" id="nkN-mZ-NrD" customClass="TransportsDetailVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ayM-0X-mgi"/>
                         <viewControllerLayoutGuide type="bottom" id="aKV-AM-aYQ"/>
@@ -32,9 +33,26 @@
                     <view key="view" contentMode="scaleToFill" id="2xG-re-czo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail view label text" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-sG-7V8">
+                                <rect key="frame" x="26" y="290" width="548" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hvk-sG-7V8" secondAttribute="trailing" constant="10" id="3nO-LQ-Qpr"/>
+                            <constraint firstItem="Hvk-sG-7V8" firstAttribute="leading" secondItem="2xG-re-czo" secondAttribute="leadingMargin" constant="10" id="W65-fQ-1k9"/>
+                            <constraint firstItem="Hvk-sG-7V8" firstAttribute="centerY" secondItem="2xG-re-czo" secondAttribute="centerY" id="i7K-Il-Hmh"/>
+                            <constraint firstAttribute="centerX" secondItem="Hvk-sG-7V8" secondAttribute="centerX" id="ucn-7H-IUT"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PzL-mN-hW4"/>
+                    <navigationItem key="navigationItem" title="Transports Detail VC" id="PzL-mN-hW4"/>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="Hvk-sG-7V8" id="zVt-9V-lXr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ej-aW-00i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,7 +61,7 @@
         <!--Transports Master TVC-->
         <scene sceneID="SNI-TT-3EK">
             <objects>
-                <tableViewController title="Transports Master TVC" clearsSelectionOnViewWillAppear="NO" id="TOJ-V4-4TL" sceneMemberID="viewController">
+                <tableViewController title="Transports Master TVC" clearsSelectionOnViewWillAppear="NO" id="TOJ-V4-4TL" customClass="TransportsMasterTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UCy-j4-d7C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +73,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aMe-aK-CWx" kind="showDetail" id="7ll-ZK-zGc"/>
+                                    <segue destination="aMe-aK-CWx" kind="showDetail" identifier="showTransportDetail" id="7ll-ZK-zGc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -89,7 +107,7 @@
         <!--Transports SVC-->
         <scene sceneID="OJ7-9w-alp">
             <objects>
-                <splitViewController title="Transports SVC" id="gUE-8u-Ijw" sceneMemberID="viewController">
+                <splitViewController title="Transports SVC" id="gUE-8u-Ijw" customClass="TransportsSplitVC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vlZ-wp-uX3"/>
                     <connections>
                         <segue destination="s2n-ER-Caq" kind="relationship" relationship="masterViewController" id="BHd-6w-Sfg"/>
@@ -299,6 +317,6 @@
         <image name="professional8" width="32" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7ll-ZK-zGc"/>
+        <segue reference="pgt-HX-kus"/>
     </inferredMetricsTieBreakers>
 </document>
