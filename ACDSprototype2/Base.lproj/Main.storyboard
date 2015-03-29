@@ -1,25 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzG-kc-edX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Transports NC-->
+        <scene sceneID="IvQ-YE-l5P">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController title="Transports NC" id="H6H-v4-xfC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transports" image="medical52" id="SL2-Mm-Pt9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wSf-ds-LVl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkR-VN-ixc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1638" y="-357"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qmE-uY-Gge">
+            <objects>
+                <tabBarController id="kzG-kc-edX" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ksD-jU-HKv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H6H-v4-xfC" kind="relationship" relationship="viewControllers" id="E64-19-7TK"/>
+                        <segue destination="bEh-Br-OFs" kind="relationship" relationship="viewControllers" id="Mv0-zs-psK"/>
+                        <segue destination="Ik0-fY-ovK" kind="relationship" relationship="viewControllers" id="n5c-tz-Az3"/>
+                        <segue destination="eBF-iv-dD3" kind="relationship" relationship="viewControllers" id="ulR-Y4-yaH"/>
+                        <segue destination="NBF-1W-ScZ" kind="relationship" relationship="viewControllers" id="ByG-Sm-Sa9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dq-BY-XWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="1242"/>
+        </scene>
+        <!--Protocols NC-->
+        <scene sceneID="T5s-cG-fBW">
+            <objects>
+                <navigationController title="Protocols NC" id="bEh-Br-OFs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Protocols" image="medical50" id="GjD-i7-yVr"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rA1-MU-b0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXb-77-bjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="367"/>
+        </scene>
+        <!--Vitals NC-->
+        <scene sceneID="2nD-E7-Lwp">
+            <objects>
+                <navigationController title="Vitals NC" id="Ik0-fY-ovK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Vitals" image="heart254" id="KCe-a9-SMO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vfq-Ky-8Zn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLZ-GZ-nkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="1073"/>
+        </scene>
+        <!--Formulary NC-->
+        <scene sceneID="sdI-Rb-kgQ">
+            <objects>
+                <navigationController title="Formulary NC" id="eBF-iv-dD3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Formulary" image="pill" id="rBT-T2-lSl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6f-21-ydJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8T-4b-w8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="1753"/>
+        </scene>
+        <!--Video NC-->
+        <scene sceneID="dSC-Ts-idI">
+            <objects>
+                <navigationController title="Video NC" id="NBF-1W-ScZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Video" image="professional8" id="acG-d2-iLY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4OR-Bu-KgT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8P5-Ns-KzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1626" y="2469"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart254" width="32" height="32"/>
+        <image name="medical50" width="32" height="32"/>
+        <image name="medical52" width="32" height="32"/>
+        <image name="pill" width="32" height="32"/>
+        <image name="professional8" width="32" height="24"/>
+    </resources>
 </document>
