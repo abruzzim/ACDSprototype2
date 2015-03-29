@@ -16,6 +16,8 @@
 		42803AF01AC7A7B100D6E206 /* TransportsSplitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AEF1AC7A7B100D6E206 /* TransportsSplitVC.m */; };
 		42803AF31AC7A7F700D6E206 /* TransportsMasterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AF21AC7A7F700D6E206 /* TransportsMasterTVC.m */; };
 		42803AF61AC7A82E00D6E206 /* TransportsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AF51AC7A82E00D6E206 /* TransportsDetailVC.m */; };
+		42803AF91AC8453100D6E206 /* ProtocolsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AF81AC8453100D6E206 /* ProtocolsTVC.m */; };
+		42803AFF1AC85C2200D6E206 /* TreatmentProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AFE1AC85C2200D6E206 /* TreatmentProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		42803AF21AC7A7F700D6E206 /* TransportsMasterTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsMasterTVC.m; sourceTree = "<group>"; };
 		42803AF41AC7A82E00D6E206 /* TransportsDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransportsDetailVC.h; sourceTree = "<group>"; };
 		42803AF51AC7A82E00D6E206 /* TransportsDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsDetailVC.m; sourceTree = "<group>"; };
+		42803AF71AC8453100D6E206 /* ProtocolsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolsTVC.h; sourceTree = "<group>"; };
+		42803AF81AC8453100D6E206 /* ProtocolsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolsTVC.m; sourceTree = "<group>"; };
+		42803AFD1AC85C2200D6E206 /* TreatmentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentProtocol.h; sourceTree = "<group>"; };
+		42803AFE1AC85C2200D6E206 /* TreatmentProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				42803AF21AC7A7F700D6E206 /* TransportsMasterTVC.m */,
 				42803AF41AC7A82E00D6E206 /* TransportsDetailVC.h */,
 				42803AF51AC7A82E00D6E206 /* TransportsDetailVC.m */,
+				42803AFD1AC85C2200D6E206 /* TreatmentProtocol.h */,
+				42803AFE1AC85C2200D6E206 /* TreatmentProtocol.m */,
+				42803AF71AC8453100D6E206 /* ProtocolsTVC.h */,
+				42803AF81AC8453100D6E206 /* ProtocolsTVC.m */,
 				42803ACC1AC791EA00D6E206 /* Main.storyboard */,
 				42803ACF1AC791EA00D6E206 /* Images.xcassets */,
 				42803AD11AC791EA00D6E206 /* LaunchScreen.xib */,
@@ -230,9 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				42803AF61AC7A82E00D6E206 /* TransportsDetailVC.m in Sources */,
+				42803AF91AC8453100D6E206 /* ProtocolsTVC.m in Sources */,
 				42803AC81AC791EA00D6E206 /* AppDelegate.m in Sources */,
 				42803AF31AC7A7F700D6E206 /* TransportsMasterTVC.m in Sources */,
 				42803AC51AC791EA00D6E206 /* main.m in Sources */,
+				42803AFF1AC85C2200D6E206 /* TreatmentProtocol.m in Sources */,
 				42803AF01AC7A7B100D6E206 /* TransportsSplitVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

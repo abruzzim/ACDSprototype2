@@ -20,7 +20,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsDetailVC-I-TRACE, setDetailItem: called.");
+    NSLog(@"%%TransportsDetailVC-I-TRACE, -setDetailItem: called.");
     
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
@@ -34,7 +34,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsDetailVC-I-TRACE, configureView: called.");
+    NSLog(@"%%TransportsDetailVC-I-TRACE, -configureView: called.");
     
     // Update the user interface for the detail item.
     //
@@ -49,26 +49,21 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsDetailVC-I-TRACE, viewDidLoad: called.");
+    NSLog(@"%%TransportsDetailVC-I-TRACE, -viewDidLoad: called.");
+    
+    // Set the background color
+    //
+    self.view.backgroundColor = [UIColor redColor];
     
     // Do any additional setup after loading the view, typically from a nib.
     //
     [self configureView];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

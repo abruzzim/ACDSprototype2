@@ -160,7 +160,7 @@
         <!--Protocols TVC-->
         <scene sceneID="xpP-oS-KWg">
             <objects>
-                <tableViewController title="Protocols TVC" id="yRa-3l-6Ht" sceneMemberID="viewController">
+                <tableViewController title="Protocols TVC" id="yRa-3l-6Ht" customClass="ProtocolsTVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="svd-mu-QCT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,6 +317,6 @@
         <image name="professional8" width="32" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pgt-HX-kus"/>
+        <segue reference="7ll-ZK-zGc"/>
     </inferredMetricsTieBreakers>
 </document>

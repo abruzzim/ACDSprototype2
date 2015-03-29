@@ -22,7 +22,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, viewDidLoad: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -viewDidLoad: called.");
     
     // Set the preferred size for the master  table view controller’s view.
     //
@@ -59,7 +59,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, insertNewObject: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -insertNewObject: called.");
     
     // If the mutable array does not exist then create it.
     //
@@ -93,7 +93,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, numberOfSectionsInTableView: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -numberOfSectionsInTableView: called.");
     
     return 1;
 }
@@ -102,7 +102,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, tableView:numberOfRowsInSection: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -tableView:numberOfRowsInSection: called.");
     
     return self.dataObjects.count;
 }
@@ -111,7 +111,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, tableView:cellForRowAtIndexPath:");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -tableView:cellForRowAtIndexPath:");
     
     // Configure the cell.
     //
@@ -135,7 +135,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, tableView:canEditRowAtIndexPath: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -tableView:canEditRowAtIndexPath: called.");
     
     // Return NO if you do not want the specified item to be editable.
     return YES;
@@ -147,7 +147,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, tableView:commitEditingStyle:forRowAtIndexPath: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -tableView:commitEditingStyle:forRowAtIndexPath: called.");
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
@@ -166,20 +166,6 @@
     }
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 #pragma mark - Segues
 
 // In a storyboard-based application, perform optional preparation before navigation
@@ -188,7 +174,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsMasterTVC-I-TRACE, prepareForSegue:sender: called.");
+    NSLog(@"%%TransportsMasterTVC-I-TRACE, -prepareForSegue:sender: called.");
     
     if ([[segue identifier] isEqualToString:@"showTransportDetail"]) {
         

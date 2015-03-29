@@ -26,7 +26,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsSplitVC-I-TRACE, viewDidLoad: called.");
+    NSLog(@"%%TransportsSplitVC-I-TRACE, -viewDidLoad: called.");
     
     // Return the navigation controller managed by the split-view controller.
     //
@@ -55,7 +55,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%TransportsSplitVC-I-TRACE, splitViewController:collapseSecondaryViewController:ontoPrimaryViewController:");
+    NSLog(@"%%TransportsSplitVC-I-TRACE, -splitViewController:collapseSecondaryViewController:ontoPrimaryViewController: called.");
     
     if ([secondaryViewController isKindOfClass:[UINavigationController class]] &&
         [[(UINavigationController *)secondaryViewController topViewController] isKindOfClass:[TransportsDetailVC class]] &&
