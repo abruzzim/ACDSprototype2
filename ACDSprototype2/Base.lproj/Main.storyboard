@@ -34,24 +34,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail view label text" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-sG-7V8">
-                                <rect key="frame" x="26" y="290" width="548" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transport Details" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-ld-BUR">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hvk-sG-7V8" secondAttribute="trailing" constant="10" id="3nO-LQ-Qpr"/>
-                            <constraint firstItem="Hvk-sG-7V8" firstAttribute="leading" secondItem="2xG-re-czo" secondAttribute="leadingMargin" constant="10" id="W65-fQ-1k9"/>
-                            <constraint firstItem="Hvk-sG-7V8" firstAttribute="centerY" secondItem="2xG-re-czo" secondAttribute="centerY" id="i7K-Il-Hmh"/>
-                            <constraint firstAttribute="centerX" secondItem="Hvk-sG-7V8" secondAttribute="centerX" id="ucn-7H-IUT"/>
+                            <constraint firstItem="z2f-ld-BUR" firstAttribute="trailing" secondItem="2xG-re-czo" secondAttribute="trailingMargin" id="4KG-4G-MBW"/>
+                            <constraint firstItem="z2f-ld-BUR" firstAttribute="top" secondItem="ayM-0X-mgi" secondAttribute="bottom" constant="221" id="7ga-py-7Cc"/>
+                            <constraint firstItem="z2f-ld-BUR" firstAttribute="centerY" secondItem="2xG-re-czo" secondAttribute="centerY" id="BPS-86-vXc"/>
+                            <constraint firstItem="z2f-ld-BUR" firstAttribute="leading" secondItem="2xG-re-czo" secondAttribute="leadingMargin" id="O2W-IW-L9v"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Transports Detail VC" id="PzL-mN-hW4"/>
+                    <navigationItem key="navigationItem" id="PzL-mN-hW4"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="Hvk-sG-7V8" id="zVt-9V-lXr"/>
+                        <outlet property="detailDescriptionLabel" destination="z2f-ld-BUR" id="j49-Dn-Q5L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ej-aW-00i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,7 +83,7 @@
                             <outlet property="delegate" destination="TOJ-V4-4TL" id="IPz-aM-QkQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Transports Master VC" id="BOj-ee-NKh"/>
+                    <navigationItem key="navigationItem" title="Transports" id="BOj-ee-NKh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L1l-bY-qb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,7 +109,7 @@
         <scene sceneID="OJ7-9w-alp">
             <objects>
                 <splitViewController title="Transports SVC" id="gUE-8u-Ijw" customClass="TransportsSplitVC" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="vlZ-wp-uX3"/>
+                    <navigationItem key="navigationItem" title="Transport Detail" id="vlZ-wp-uX3"/>
                     <connections>
                         <segue destination="s2n-ER-Caq" kind="relationship" relationship="masterViewController" id="BHd-6w-Sfg"/>
                         <segue destination="aMe-aK-CWx" kind="relationship" relationship="detailViewController" id="pgt-HX-kus"/>
@@ -138,7 +139,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dq-BY-XWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="1242"/>
+            <point key="canvasLocation" x="536" y="2138"/>
         </scene>
         <!--Protocols NC-->
         <scene sceneID="T5s-cG-fBW">
@@ -178,7 +179,7 @@
                             <outlet property="delegate" destination="yRa-3l-6Ht" id="4ng-p4-lQn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3Sy-ag-V9f"/>
+                    <navigationItem key="navigationItem" title="Treatment Protocols" id="3Sy-ag-V9f"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYl-B2-m3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,7 +188,7 @@
         <!--Vitals VC-->
         <scene sceneID="Oh8-39-mNT">
             <objects>
-                <viewController title="Vitals VC" id="PR0-Gy-lQf" sceneMemberID="viewController">
+                <viewController title="Vitals VC" id="PR0-Gy-lQf" customClass="VitalsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fTW-YA-ANg"/>
                         <viewControllerLayoutGuide type="bottom" id="5yq-Un-Sk9"/>
@@ -195,9 +196,24 @@
                     <view key="view" contentMode="scaleToFill" id="vKF-R0-qcc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vital Signs Placeholder" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkb-Ed-UgT">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hkb-Ed-UgT" firstAttribute="top" secondItem="fTW-YA-ANg" secondAttribute="bottom" constant="221" id="Erd-w9-vU4"/>
+                            <constraint firstItem="hkb-Ed-UgT" firstAttribute="leading" secondItem="vKF-R0-qcc" secondAttribute="leadingMargin" id="WVP-9T-WT7"/>
+                            <constraint firstAttribute="centerX" secondItem="hkb-Ed-UgT" secondAttribute="centerX" id="lD3-Ex-hOU"/>
+                            <constraint firstItem="hkb-Ed-UgT" firstAttribute="centerY" secondItem="vKF-R0-qcc" secondAttribute="centerY" id="xZb-cY-kZY"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nLd-aT-qCP"/>
+                    <navigationItem key="navigationItem" title="Vital Signs" id="nLd-aT-qCP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOJ-vj-20d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +222,7 @@
         <!--Formulary VC-->
         <scene sceneID="4sI-oO-K8J">
             <objects>
-                <viewController title="Formulary VC" id="8it-iC-eiG" sceneMemberID="viewController">
+                <viewController title="Formulary VC" id="8it-iC-eiG" customClass="FormularyVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="87a-ug-t4d"/>
                         <viewControllerLayoutGuide type="bottom" id="sW0-aV-LPq"/>
@@ -214,9 +230,24 @@
                     <view key="view" contentMode="scaleToFill" id="oll-3p-imm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Formulary Placeholder" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="710-0Z-c4G">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="710-0Z-c4G" firstAttribute="top" secondItem="87a-ug-t4d" secondAttribute="bottom" constant="221" id="aAC-E4-LP2"/>
+                            <constraint firstItem="710-0Z-c4G" firstAttribute="centerY" secondItem="oll-3p-imm" secondAttribute="centerY" id="hSW-Fb-3aq"/>
+                            <constraint firstItem="710-0Z-c4G" firstAttribute="trailing" secondItem="oll-3p-imm" secondAttribute="trailingMargin" id="kmc-9k-x7J"/>
+                            <constraint firstItem="710-0Z-c4G" firstAttribute="leading" secondItem="oll-3p-imm" secondAttribute="leadingMargin" id="meg-q9-u2r"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2zK-cu-qYe"/>
+                    <navigationItem key="navigationItem" title="Formulary" id="2zK-cu-qYe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLv-lq-SGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,7 +256,7 @@
         <!--Video VC-->
         <scene sceneID="JwU-dt-93V">
             <objects>
-                <viewController title="Video VC" id="kjh-7x-LVB" sceneMemberID="viewController">
+                <viewController title="Video VC" id="kjh-7x-LVB" customClass="VideoVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8CO-Qr-LAX"/>
                         <viewControllerLayoutGuide type="bottom" id="gkm-bf-fnz"/>
@@ -233,9 +264,24 @@
                     <view key="view" contentMode="scaleToFill" id="Uzp-jO-V4O">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Conf Placeholder" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lr7-Yh-Cvb">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lr7-Yh-Cvb" firstAttribute="leading" secondItem="Uzp-jO-V4O" secondAttribute="leadingMargin" id="7SF-pR-yPO"/>
+                            <constraint firstItem="Lr7-Yh-Cvb" firstAttribute="top" secondItem="8CO-Qr-LAX" secondAttribute="bottom" constant="221" id="bRR-WD-eyn"/>
+                            <constraint firstItem="Lr7-Yh-Cvb" firstAttribute="centerY" secondItem="Uzp-jO-V4O" secondAttribute="centerY" id="eLs-ca-B7F"/>
+                            <constraint firstItem="Lr7-Yh-Cvb" firstAttribute="trailing" secondItem="Uzp-jO-V4O" secondAttribute="trailingMargin" id="zr2-0o-oxP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Jkj-k4-7ui"/>
+                    <navigationItem key="navigationItem" title="Video Conference" id="Jkj-k4-7ui"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STO-Zm-fc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

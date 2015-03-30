@@ -31,11 +31,7 @@
     // Set the preferred size for the master view controller’s view.
     //
     self.preferredContentSize = CGSizeMake(320.0, 600.0);
-    /*
-    // Preserve selection between presentations.
-    //
-    self.clearsSelectionOnViewWillAppear = NO;
-    */
+
     // Load statis data (treatment protocols).
     //
     self.treatmentProtocols = [[NSMutableArray alloc] init];
