@@ -1,5 +1,5 @@
 //
-//  VideoVC.h
+//  ConferenceVC.h
 //  ACDSprototype2
 //
 //  Created by abruzzim on 3/30/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoVC : UIViewController
+@interface ConferenceVC : UIViewController
 
 @end

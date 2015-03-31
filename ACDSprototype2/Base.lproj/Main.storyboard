@@ -253,10 +253,10 @@
             </objects>
             <point key="canvasLocation" x="2430" y="1753"/>
         </scene>
-        <!--Video VC-->
+        <!--Conference VC-->
         <scene sceneID="JwU-dt-93V">
             <objects>
-                <viewController title="Video VC" id="kjh-7x-LVB" customClass="VideoVC" sceneMemberID="viewController">
+                <viewController title="Conference VC" id="kjh-7x-LVB" customClass="ConferenceVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8CO-Qr-LAX"/>
                         <viewControllerLayoutGuide type="bottom" id="gkm-bf-fnz"/>
@@ -321,11 +321,11 @@
             </objects>
             <point key="canvasLocation" x="1626" y="1753"/>
         </scene>
-        <!--Video NC-->
+        <!--Conference NC-->
         <scene sceneID="dSC-Ts-idI">
             <objects>
-                <navigationController title="Video NC" id="NBF-1W-ScZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Video" image="professional8" id="acG-d2-iLY"/>
+                <navigationController title="Conference NC" id="NBF-1W-ScZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Conference" image="professional8" id="acG-d2-iLY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4OR-Bu-KgT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

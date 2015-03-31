@@ -19,8 +19,8 @@
 		42803AF91AC8453100D6E206 /* ProtocolsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42803AF81AC8453100D6E206 /* ProtocolsTVC.m */; };
 		AF2B0BF51AC911B00012495C /* VitalsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2B0BF41AC911B00012495C /* VitalsVC.m */; };
 		AF2B0BF81AC91B700012495C /* FormularyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2B0BF71AC91B700012495C /* FormularyVC.m */; };
-		AF2B0BFB1AC91C2B0012495C /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2B0BFA1AC91C2B0012495C /* VideoVC.m */; };
 		AFB8404A1ACA2B1400967139 /* TreatmentProtocols.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB840491ACA2B1400967139 /* TreatmentProtocols.m */; };
+		AFB8404D1ACA328500967139 /* ConferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB8404C1ACA328500967139 /* ConferenceVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +57,10 @@
 		AF2B0BF41AC911B00012495C /* VitalsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VitalsVC.m; sourceTree = "<group>"; };
 		AF2B0BF61AC91B700012495C /* FormularyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularyVC.h; sourceTree = "<group>"; };
 		AF2B0BF71AC91B700012495C /* FormularyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularyVC.m; sourceTree = "<group>"; };
-		AF2B0BF91AC91C2B0012495C /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
-		AF2B0BFA1AC91C2B0012495C /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 		AFB840481ACA2B1400967139 /* TreatmentProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentProtocols.h; sourceTree = "<group>"; };
 		AFB840491ACA2B1400967139 /* TreatmentProtocols.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentProtocols.m; sourceTree = "<group>"; };
+		AFB8404B1ACA328500967139 /* ConferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceVC.h; sourceTree = "<group>"; };
+		AFB8404C1ACA328500967139 /* ConferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 				AF2B0BF41AC911B00012495C /* VitalsVC.m */,
 				AF2B0BF61AC91B700012495C /* FormularyVC.h */,
 				AF2B0BF71AC91B700012495C /* FormularyVC.m */,
-				AF2B0BF91AC91C2B0012495C /* VideoVC.h */,
-				AF2B0BFA1AC91C2B0012495C /* VideoVC.m */,
+				AFB8404B1ACA328500967139 /* ConferenceVC.h */,
+				AFB8404C1ACA328500967139 /* ConferenceVC.m */,
 				42803ACC1AC791EA00D6E206 /* Main.storyboard */,
 				42803ACF1AC791EA00D6E206 /* Images.xcassets */,
 				42803AD11AC791EA00D6E206 /* LaunchScreen.xib */,
@@ -259,7 +259,7 @@
 				42803AF91AC8453100D6E206 /* ProtocolsTVC.m in Sources */,
 				42803AC81AC791EA00D6E206 /* AppDelegate.m in Sources */,
 				AFB8404A1ACA2B1400967139 /* TreatmentProtocols.m in Sources */,
-				AF2B0BFB1AC91C2B0012495C /* VideoVC.m in Sources */,
+				AFB8404D1ACA328500967139 /* ConferenceVC.m in Sources */,
 				42803AF31AC7A7F700D6E206 /* TransportsMasterTVC.m in Sources */,
 				AF2B0BF81AC91B700012495C /* FormularyVC.m in Sources */,
 				42803AC51AC791EA00D6E206 /* main.m in Sources */,
