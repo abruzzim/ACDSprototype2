@@ -1,40 +1,36 @@
 //
-//  ProtocolsTVC.m
+//  GuidelinesTVC.m
 //  ACDSprototype2
 //
-//  Created by dev9998 on 3/29/15.
+//  Created by abruzzim on 4/4/15.
 //  Copyright (c) 2015 FWS. All rights reserved.
 //
 
-#import "ProtocolsTVC.h"
-#import "TreatmentProtocols.h"
+#import "GuidelinesTVC.h"
+#import "Guidelines.h"
 
-@interface ProtocolsTVC ()
+@interface GuidelinesTVC ()
 
-@property NSArray *protocolTitles;
+@property NSArray *guidelines;
 
 @end
 
-@implementation ProtocolsTVC
+@implementation GuidelinesTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%ProtocolsTVC-I-TRACE, -viewDidLoad: called.");
+    NSLog(@"%%GuidelinesTVC-I-TRACE, -viewDidLoad: called.");
     
     // Set background color
     //
     self.view.backgroundColor = [UIColor greenColor];
     
-    // Set the preferred size for the master view controller’s view.
+    // Retrieve treatment guidelines array.
     //
-    self.preferredContentSize = CGSizeMake(320.0, 600.0);
-    
-    // Retrieve treatment protocol title array.
-    //
-    self.protocolTitles = [TreatmentProtocols titles];
+    self.guidelines = [Guidelines knownGuidelines];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +44,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%ProtocolsTVC-I-TRACE, -numberOfSectionsInTableView: called.");
+    NSLog(@"%%GuidelinesTVC-I-TRACE, -numberOfSectionsInTableView: called.");
     
     return 1;
 }
@@ -57,29 +53,29 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%ProtocolsTVC-I-TRACE, -tableView:numberOfRowsInSection: called.");
+    NSLog(@"%%GuidelinesTVC-I-TRACE, -tableView:numberOfRowsInSection: called.");
     
-    return self.protocolTitles.count;
+    return self.guidelines.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%ProtocolsTVC-I-TRACE, -tableView:cellForRowAtIndexPath:");
+    NSLog(@"%%GuidelinesTVC-I-TRACE, -tableView:cellForRowAtIndexPath:");
     
     // Configure the cell.
     //
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ProtocolCell"
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GuidelineCell"
                                                             forIndexPath:indexPath];
     
     // Return the data object corresponding to the index path row.
     //
-    NSString *treatmentProtocolTitle = self.protocolTitles[indexPath.row];
+    NSString *guidelineTitle = self.guidelines[indexPath.row][@"title"];
     
     // Set the cell's text label to the string representation of the treatment protocol object.
     //
-    cell.textLabel.text = treatmentProtocolTitle;
+    cell.textLabel.text = guidelineTitle;
     
     return cell;
 }
