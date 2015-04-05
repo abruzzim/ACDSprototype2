@@ -8,6 +8,7 @@
 
 #import "GuidelinesTVC.h"
 #import "Guidelines.h"
+#import "GuidelineVC.h"
 
 @interface GuidelinesTVC ()
 
@@ -62,7 +63,7 @@
     
     // Log a trace message to the console.
     //
-    NSLog(@"%%GuidelinesTVC-I-TRACE, -tableView:cellForRowAtIndexPath:");
+    NSLog(@"%%GuidelinesTVC-I-TRACE, -tableView:cellForRowAtIndexPath: called.");
     
     // Configure the cell.
     //
@@ -78,6 +79,40 @@
     cell.textLabel.text = guidelineTitle;
     
     return cell;
+}
+
+// Manager selection; Tell the delegate that the specified row is now selected.
+//
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Log a trace message to the console.
+    //
+    NSLog(@"%%GuidelinesTVC-I-TRACE, -tableView:didSelectRowAtIndexPath: called.");
+
+    // Instantiate a guidelineVC.
+    //
+    GuidelineVC *guidelineVC = [[GuidelineVC alloc] init];
+    NSLog(@"%%GuidelinesTVC-I-TRACE, guidelineVC instantiated.");
+    
+    // Set the guidelineVC properties.
+    //
+    guidelineVC.scrollView = [[UIScrollView alloc] init];
+    NSLog(@"%%GuidelinesTVC-I-TRACE, scrollView instantiated.");
+    guidelineVC.scrollView.contentSize = CGSizeMake(768, 4914);
+    NSLog(@"%%GuidelinesTVC-I-TRACE, scollView contentSize set.");
+    guidelineVC.flowchartImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 4914)];
+    NSLog(@"%%GuidelinesTVC-I-TRACE, flowchart image view instantiated with frame.");
+    [guidelineVC.flowchartImage setImage:[UIImage imageNamed:self.guidelines[indexPath.row][@"filename"]]];
+    NSLog(@"%%GuidelinesTVC-I-TRACE, flowchart image filename set.");
+    NSString *prefixTitle = self.guidelines[indexPath.row][@"title"];
+    guidelineVC.title = [prefixTitle stringByAppendingString:@" Flow Chart"];
+    NSLog(@"%%GuidelinesTVC-I-TRACE, guideline VC title set.");
+ 
+    // Push the guidelineVC onto the ProtocolsTVC’s stack and update the display.
+    //
+    [self.navigationController pushViewController:guidelineVC animated:YES];
+
+    
 }
 
 @end

@@ -26,7 +26,7 @@
     // Treatment guidelines (protocols) dictionary.
     //
     return @[
-             @{key1:@"Sepsis",key2:@"SepsisFlowchat3",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
+             @{key1:@"Sepsis",key2:@"SepsisFlowchart3",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
              @{key1:@"Diabetic Ketoacidosis",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
              @{key1:@"Traumatic Brain Injury",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
              @{key1:@"Status Asthmaticus",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},

@@ -20,6 +20,7 @@
 		AF2B0BF81AC91B700012495C /* FormularyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2B0BF71AC91B700012495C /* FormularyVC.m */; };
 		AF98BDDD1AD072EC009D06D0 /* GuidelinesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF98BDDC1AD072EC009D06D0 /* GuidelinesTVC.m */; };
 		AF98BDE01AD0780D009D06D0 /* Guidelines.m in Sources */ = {isa = PBXBuildFile; fileRef = AF98BDDF1AD0780D009D06D0 /* Guidelines.m */; };
+		AF98BDE31AD07B96009D06D0 /* GuidelineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AF98BDE21AD07B96009D06D0 /* GuidelineVC.m */; };
 		AFB8404D1ACA328500967139 /* ConferenceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB8404C1ACA328500967139 /* ConferenceVC.m */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		AF98BDDC1AD072EC009D06D0 /* GuidelinesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelinesTVC.m; sourceTree = "<group>"; };
 		AF98BDDE1AD0780D009D06D0 /* Guidelines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guidelines.h; sourceTree = "<group>"; };
 		AF98BDDF1AD0780D009D06D0 /* Guidelines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guidelines.m; sourceTree = "<group>"; };
+		AF98BDE11AD07B96009D06D0 /* GuidelineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineVC.h; sourceTree = "<group>"; };
+		AF98BDE21AD07B96009D06D0 /* GuidelineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineVC.m; sourceTree = "<group>"; };
 		AFB8404B1ACA328500967139 /* ConferenceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConferenceVC.h; sourceTree = "<group>"; };
 		AFB8404C1ACA328500967139 /* ConferenceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConferenceVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +117,8 @@
 				AF98BDDF1AD0780D009D06D0 /* Guidelines.m */,
 				AF98BDDB1AD072EC009D06D0 /* GuidelinesTVC.h */,
 				AF98BDDC1AD072EC009D06D0 /* GuidelinesTVC.m */,
+				AF98BDE11AD07B96009D06D0 /* GuidelineVC.h */,
+				AF98BDE21AD07B96009D06D0 /* GuidelineVC.m */,
 				AF2B0BF31AC911B00012495C /* VitalsVC.h */,
 				AF2B0BF41AC911B00012495C /* VitalsVC.m */,
 				AF2B0BF61AC91B700012495C /* FormularyVC.h */,
@@ -256,6 +261,7 @@
 			files = (
 				AF98BDDD1AD072EC009D06D0 /* GuidelinesTVC.m in Sources */,
 				42803AF61AC7A82E00D6E206 /* TransportsDetailVC.m in Sources */,
+				AF98BDE31AD07B96009D06D0 /* GuidelineVC.m in Sources */,
 				AF2B0BF51AC911B00012495C /* VitalsVC.m in Sources */,
 				42803AC81AC791EA00D6E206 /* AppDelegate.m in Sources */,
 				AFB8404D1ACA328500967139 /* ConferenceVC.m in Sources */,
