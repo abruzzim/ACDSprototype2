@@ -94,13 +94,13 @@
     GuidelineVC *guidelineVC = [[GuidelineVC alloc] init];
     NSLog(@"%%GuidelinesTVC-I-TRACE, guidelineVC instantiated.");
     
-    // Set the guidelineVC properties.
+    // Set the guidelineVC properties from the model data.
     //
     guidelineVC.scrollView = [[UIScrollView alloc] init];
     NSLog(@"%%GuidelinesTVC-I-TRACE, scrollView instantiated.");
-    guidelineVC.scrollView.contentSize = CGSizeMake(768, 4914);
+    guidelineVC.scrollView.contentSize = [self.guidelines[indexPath.row][@"size"] CGSizeValue];
     NSLog(@"%%GuidelinesTVC-I-TRACE, scollView contentSize set.");
-    guidelineVC.flowchartImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 768, 4914)];
+    guidelineVC.flowchartImage = [[UIImageView alloc] initWithFrame:[self.guidelines[indexPath.row][@"frame"] CGRectValue]];
     NSLog(@"%%GuidelinesTVC-I-TRACE, flowchart image view instantiated with frame.");
     [guidelineVC.flowchartImage setImage:[UIImage imageNamed:self.guidelines[indexPath.row][@"filename"]]];
     NSLog(@"%%GuidelinesTVC-I-TRACE, flowchart image filename set.");

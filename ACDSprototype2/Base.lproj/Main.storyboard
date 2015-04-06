@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="536" y="2138"/>
         </scene>
-        <!--Protocols NC-->
+        <!--Guidelines NC-->
         <scene sceneID="T5s-cG-fBW">
             <objects>
-                <navigationController title="Protocols NC" id="bEh-Br-OFs" sceneMemberID="viewController">
+                <navigationController title="Guidelines NC" id="bEh-Br-OFs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Protocols" image="medical50" id="GjD-i7-yVr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rA1-MU-b0a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -167,7 +167,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuidelineCell" id="weI-gT-QYo">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GuidelineCell" id="weI-gT-QYo">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="weI-gT-QYo" id="GUa-Zc-Z1h">
                                     <autoresizingMask key="autoresizingMask"/>

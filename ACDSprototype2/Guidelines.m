@@ -12,26 +12,53 @@
 
 + (NSArray *)knownGuidelines {
     
-    // Treatment guidelines (protocols) dictionary keys.
-    //
-    NSString *key1 = @"title";
-    NSString *key2 = @"filename";
-    NSString *key3 = @"sizeWidth";
-    NSString *key4 = @"sizeHeight";
-    NSString *key5 = @"frameX";
-    NSString *key6 = @"frameY";
-    NSString *key7 = @"frameWidth";
-    NSString *key8 = @"frameHeight";
-    
     // Treatment guidelines (protocols) dictionary.
     //
-    return @[
-             @{key1:@"Sepsis",key2:@"SepsisFlowchart3",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
-             @{key1:@"Diabetic Ketoacidosis",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
-             @{key1:@"Traumatic Brain Injury",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
-             @{key1:@"Status Asthmaticus",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0},
-             @{key1:@"Status Epilepticus",key2:@"",key3:@768.0,key4:@4914.0,key5:@0.0,key6:@0.0,key7:@768.0,key8:@4914.0}
-             ];
+    NSDictionary *guideline1 = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Sepsis", @"title",
+                                @"SepsisFlowchart3", @"filename",
+                                [NSValue valueWithCGSize:CGSizeMake(768, 4914)], @"size",
+                                [NSValue valueWithCGRect:CGRectMake(0, 0, 768, 4914)], @"frame",
+                                nil];
+    
+    NSDictionary *guideline2 = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Diabetic Ketoacidosis", @"title",
+                                @"", @"filename",
+                                [NSValue valueWithCGSize:CGSizeMake(768, 4096)], @"size",
+                                [NSValue valueWithCGRect:CGRectMake(0, 0, 768, 4096)], @"frame",
+                                nil];
+    
+    NSDictionary *guideline3 = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Traumatic Brain Injury", @"title",
+                                @"", @"filename",
+                                [NSValue valueWithCGSize:CGSizeMake(768, 4096)], @"size",
+                                [NSValue valueWithCGRect:CGRectMake(0, 0, 768, 4096)], @"frame",
+                                nil];
+    
+    NSDictionary *guideline4 = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Status Asthmaticus", @"title",
+                                @"", @"filename",
+                                [NSValue valueWithCGSize:CGSizeMake(768, 4096)], @"size",
+                                [NSValue valueWithCGRect:CGRectMake(0, 0, 768, 4096)], @"frame",
+                                nil];
+    
+    NSDictionary *guideline5 = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"Status Epilepticus", @"title",
+                                @"", @"filename",
+                                [NSValue valueWithCGSize:CGSizeMake(768, 4096)], @"size",
+                                [NSValue valueWithCGRect:CGRectMake(0, 0, 768, 4096)], @"frame",
+                                nil];
+    
+    NSArray *guidelines = [[NSArray alloc] initWithObjects:
+                           guideline1,
+                           guideline2,
+                           guideline3,
+                           guideline4,
+                           guideline5,
+                           nil];
+    
+    return guidelines;
+    
 }
 
 @end
