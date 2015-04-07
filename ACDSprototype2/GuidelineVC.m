@@ -10,6 +10,10 @@
 
 @interface GuidelineVC ()
 
+#define TABBAR_HEIGHT 48
+#define TOOLBAR_HEIGHT 50
+@property (strong, nonatomic) UIToolbar *toolBar;
+
 @end
 
 @implementation GuidelineVC
@@ -69,6 +73,41 @@
     [self.view addSubview:self.scrollView];
     NSLog(@"%%GuidelineVC-I-TRACE, scrollView added to GuidelineVC view.");
     
+    // Instantiate and configure the tool bar
+    //
+    self.toolBar = [[UIToolbar alloc] init];
+    self.toolBar.backgroundColor = [UIColor lightGrayColor];
+    self.toolBar.barStyle = UIBarStyleDefault;
+    //self.toolBar.frame = CGRectMake(0, self.view.frame.size.height - TOOLBAR_HEIGHT - TABBAR_HEIGHT, self.view.frame.size.width, TOOLBAR_HEIGHT);
+    [self addToolbarItems];
+    [self.view addSubview:self.toolBar];
+    self.toolBar.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.toolBar
+                                  attribute:NSLayoutAttributeLeft
+                                  relatedBy:0
+                                     toItem:self.view
+                                  attribute:NSLayoutAttributeLeft
+                                 multiplier:1
+                                   constant:0]];
+    [self.view addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.toolBar
+                                  attribute:NSLayoutAttributeRight
+                                  relatedBy:0
+                                     toItem:self.view
+                                  attribute:NSLayoutAttributeRight
+                                 multiplier:1
+                                   constant:0]];
+    [self.view addConstraint:
+     [NSLayoutConstraint constraintWithItem:self.toolBar
+                                  attribute:NSLayoutAttributeBottom
+                                  relatedBy:0
+                                     toItem:self.view
+                                  attribute:NSLayoutAttributeBottom
+                                 multiplier:1
+                                   constant:-TABBAR_HEIGHT]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,5 +115,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)addToolbarItems {
+    
+    UIBarButtonItem *btn1 = [[UIBarButtonItem alloc] initWithTitle:@"Flowchart"
+                                                             style:UIBarButtonItemStyleDone
+                                                            target:self
+                                                            action:@selector(doButton1:)];
+    
+    UIBarButtonItem *btn2 = [[UIBarButtonItem alloc] initWithTitle:@"Text"
+                                                             style:UIBarButtonItemStyleDone
+                                                            target:self
+                                                            action:@selector(doButton2:)];
+    
+    UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                            target:self
+                                                                            action:nil];
+    
+    NSArray *barButtonItems = [NSArray arrayWithObjects:spacer, btn1, spacer, btn2, spacer, nil];
+    
+    [self.toolBar setItems:barButtonItems];
+}
+
+- (void)doButton1:(UIButton *)sender {
+    NSLog(@"%%GuidelineVC-I-TRACE, -doButton1 called.");
+}
+
+- (void)doButton2:(UIButton *)sender {
+    NSLog(@"%%GuidelineVC-I-TRACE, -doButton2 called.");
+}
+
+- (void)doButton3:(UIButton *)sender {
+    NSLog(@"%%GuidelineVC-I-TRACE, -doButton3 called.");
+}
 
 @end

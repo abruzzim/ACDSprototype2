@@ -17,7 +17,7 @@
     NSDictionary *guideline1 = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"Sepsis", @"title",
                                 @"SepsisFlowchart3", @"filename",
-                                [NSValue valueWithCGSize:CGSizeMake(768, 4914)], @"size",
+                                [NSValue valueWithCGSize:CGSizeMake(768, 4914 + 48)], @"size",
                                 [NSValue valueWithCGRect:CGRectMake(0, 0, 768, 4914)], @"frame",
                                 nil];
     
