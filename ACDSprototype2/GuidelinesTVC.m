@@ -105,7 +105,7 @@
     [guidelineVC.flowchartImage setImage:[UIImage imageNamed:self.guidelines[indexPath.row][@"filename"]]];
     NSLog(@"%%GuidelinesTVC-I-TRACE, flowchart image filename set.");
     NSString *prefixTitle = self.guidelines[indexPath.row][@"title"];
-    guidelineVC.title = [prefixTitle stringByAppendingString:@" Flow Chart"];
+    guidelineVC.title = [prefixTitle stringByAppendingString:@" Flowchart"];
     NSLog(@"%%GuidelinesTVC-I-TRACE, guideline VC title set.");
  
     // Push the guidelineVC onto the ProtocolsTVC’s stack and update the display.
